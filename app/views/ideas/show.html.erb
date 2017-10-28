@@ -22,7 +22,7 @@
     <% #= link_to 'Destroy', [@idea, comment], method: :delete, data: { confirm: 'Are you sure?' } %>
   </p>
 <% end %>
-<h2>New comment(s):</h2>
+<h2>Additional comment(s):</h2>
 <%= form_with(model: [@idea, @idea.comments.build]) do |form| %>
   <p>
     <%= form.label :description %><br>
